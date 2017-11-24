@@ -56,4 +56,5 @@ def reverse_array(input_array)
     i -= 1
     j += 1
   end
+  output_array
 end
