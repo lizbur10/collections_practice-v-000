@@ -1,10 +1,10 @@
 require 'pry'
 def lizs_sort_array(sort_array, order="asc")
+  sorted = false
   sort_array.each_with_index.map do | a, index |
-    sorted = false
     while sorted == false
-      if index < sort_array.length - 2
-        sorted = true
+      sorted = true
+      if index < sort_array.length - 1
         if switch?(a, sort_array[index + 1], order)
           puts "Yes make the switch"
           sorted=false
