@@ -33,5 +33,5 @@ def sort_array_desc(sort_array)
 end
 
 def sort_array_char_count(sort_array)
-  sort_array.sort { | a, b | length.a <=> length.b }
+  sort_array.sort { | a, b | a.length <=> b.length }
 end
