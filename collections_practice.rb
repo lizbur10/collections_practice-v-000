@@ -47,5 +47,13 @@ def swap_elements_from_to(input_array,index,destination_index)
 end
 
 def reverse_array(input_array)
-  input_array.reverse
+#  input_array.reverse  ## Using Ruby reverse method
+  i = input_array.length
+  j = 0
+  output_array = []
+  while i > 0
+    output_array[j] = input_array[i - 1]
+    i -= 1
+    j += 1
+  end
 end
