@@ -71,3 +71,7 @@ end
 def sum_array(input_array)
   input_array.inject(0) { | result, element | result + element }
 end
+
+def add_s(input_array)
+  input_array.each_with_index { | element, index| index != 1 ? element << "s" : element }
+end
