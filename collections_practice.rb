@@ -3,13 +3,11 @@ def lizs_sort_array(sort_array, order="asc")
   sorted = false
   sort_array.each_with_index.map do | a, index |
     while sorted == false
-    if index < unsorted_array.length - 1
+    if index < sort_array.length - 1
       sorted = true
-      if sort_array[index + 1] < a
-        if switch?(a, sort_array[index + 1], order)
-          sorted=false
-          sort_array[i], sort_array[i + 1] = sort_array[i + 1], sort_array[i]
-        end
+      if switch?(a, sort_array[index + 1], order)
+        sorted=false
+        sort_array[i], sort_array[i + 1] = sort_array[i + 1], sort_array[i]
       end
     end
   end
