@@ -61,6 +61,7 @@ end
 
 def kesha_maker(input_array)
   input_array.map { | element | element[2] = "$" }
+  input_array
 end
 
 def find_a(input_array)
