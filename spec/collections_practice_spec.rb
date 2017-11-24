@@ -37,7 +37,6 @@ describe 'collections practice' do
     end
   end
 
-
   # Question 5
   describe '#reverse_array' do
     it 'reverse the order of an array of integers' do
