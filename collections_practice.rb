@@ -13,6 +13,8 @@ def lizs_sort_array(sort_array, order="asc")
       end
     end
   end
+  puts "#{sort_array}"
+  sleep(0.5)
   sort_array
 end
 
