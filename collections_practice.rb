@@ -23,9 +23,11 @@ end
 lizs_sort_array([17, 3, 12, 1, 2])
 
  def sort_array_asc(sort_array)
-   sort_array.sort { | a, b | a <=> b  }
+#   sort_array.sort { | a, b | a <=> b  }
+  lizs_sort_array(sort_array)
  end
 
 def sort_array_desc(sort_array)
-  sort_array.sort { | b, a | a <=> b  }
+#  sort_array.sort { | b, a | a <=> b  }
+  lizs_sort_array(sort_array,"desc")
 end
