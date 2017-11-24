@@ -22,6 +22,8 @@ def switch?(a,b,order)
   (order == "asc" && a > b) || (order == "desc" && a < b)
 end
 
+lizs_sort_array([9, 3, 1, 117, 118, 12, 4, -11])
+
  def sort_array_asc(sort_array)
 #   sort_array.sort { | a, b | a <=> b  }
   lizs_sort_array(sort_array)
