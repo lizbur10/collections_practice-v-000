@@ -40,3 +40,8 @@ def swap_elements(input_array)
   input_array[1], input_array[2] = input_array[2], input_array[1]
   input_array
 end
+
+def swap_elements_from_to(input_array,i,j)
+  input_array[i], input_array[j] = input_array[j], input_array[i]
+  input_array
+end
