@@ -1,17 +1,17 @@
 require 'pry'
 def lizs_sort_array(sort_array, order="asc")
-  sorted = false
-  while sorted == false
-    sort_array.each_with_index.map do | a, index |
-      if index < sort_array.length - 1
+  while sorted = false
+  sort_array.each_with_index.map do | a, index |
+    if index < sort_array.length - 1
+      if switch?(a, sort_array[index + 1], order)
+        puts "Yes make the switch"
+        sorted = false
+        sort_array[index], sort_array[index + 1] = sort_array[index + 1], sort_array[index]
+      else
         sorted = true
-        if switch?(a, sort_array[index + 1], order)
-          puts "Yes make the switch"
-          sorted=false
-          sort_array[index], sort_array[index + 1] = sort_array[index + 1], sort_array[index]
-        end
       end
     end
+  end
   end
   sort_array
 end
