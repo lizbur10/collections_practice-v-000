@@ -20,10 +20,10 @@ end
 
 lizs_sort_array([17, 3, 12, 1, 2])
 
- def sort_array_asc(unsorted_array)
-   unsorted_array.sort { | a, b | a <=> b  }
+ def sort_array_asc(_array)
+   sort_array.sort { | a, b | a <=> b  }
  end
 
-def sort_array_desc(unsorted_array)
-  unsorted_array.sort { | b, a | a <=> b  }
+def sort_array_desc(sort_array)
+  sort_array.sort { | b, a | a <=> b  }
 end
