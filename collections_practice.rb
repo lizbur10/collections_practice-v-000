@@ -38,4 +38,5 @@ end
 
 def swap_elements(input_array)
   input_array[1], input_array[2] = input_array[2], input_array[1]
+  input_array
 end
