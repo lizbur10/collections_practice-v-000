@@ -31,3 +31,7 @@ def sort_array_desc(sort_array)
 #  sort_array.sort { | b, a | a <=> b  }
   lizs_sort_array(sort_array,"desc")
 end
+
+def sort_array_char_count(sort_array)
+  sort_array.sort { | a, b | length.a <=> length.b }
+end
