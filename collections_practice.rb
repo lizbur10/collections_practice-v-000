@@ -6,6 +6,7 @@ def lizs_sort_array(sort_array, order="asc")
       if index < sort_array.length - 2
         sorted = true
         if switch?(a, sort_array[index + 1], order)
+          puts "Yes make the switch"
           sorted=false
           sort_array[index], sort_array[index + 1] = sort_array[index + 1], sort_array[index]
         end
