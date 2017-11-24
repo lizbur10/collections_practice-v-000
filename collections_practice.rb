@@ -60,8 +60,9 @@ def reverse_array(input_array)
 end
 
 def kesha_maker(input_array)
-  input_array.map do | element |
-    element[2] = "$"
-  end
-  input_array
+  input_array.map { | element | element[2] = "$" }
+end
+
+def find_a(input_array)
+  input_array.select {}
 end
