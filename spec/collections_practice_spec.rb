@@ -63,7 +63,7 @@ describe 'collections practice' do
   describe '#sum_array' do
     #for a bonus, look up the `.inject` method to get this test passing
     it 'uses inject' do
-      expect[1,2,3].to receive(:inject)
+      expect(sum_array([1,2,3])).to receive(:inject)
     end
     it 'sum all the numbers in the following array' do
       expect(sum_array([11,4,7,8,9,100,134])).to eq(273)
