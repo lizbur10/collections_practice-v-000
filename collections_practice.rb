@@ -58,3 +58,8 @@ def reverse_array(input_array)
   end
   output_array
 end
+
+def kesha_maker(input_array)
+  input_array[2] = "$"
+  input_array
+end
