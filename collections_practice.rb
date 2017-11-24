@@ -1,5 +1,6 @@
 require 'pry'
 def lizs_sort_array(sort_array, order="asc")
+  sorted = false
   while sorted = false
   sort_array.each_with_index.map do | a, index |
     if index < sort_array.length - 1
