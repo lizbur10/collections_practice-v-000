@@ -3,7 +3,7 @@ def lizs_sort_array(sort_array, order="asc")
   sorted = false
   sort_array.each_with_index.map do | a, index |
     while sorted == false
-    if index < sort_array.length - 1
+    if index < sort_array.length - 2
       sorted = true
       if switch?(a, sort_array[index + 1], order)
         sorted=false
