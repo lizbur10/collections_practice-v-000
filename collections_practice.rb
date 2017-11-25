@@ -19,10 +19,10 @@ def switch?(a,b,order)
   (order == "asc" && a > b) || (order == "desc" && a < b)
 end
 
- def sort_array_asc(sort_array)
+def sort_array_asc(sort_array)
 #   sort_array.sort { | a, b | a <=> b  }
   lizs_sort_array(sort_array)
- end
+end
 
 def sort_array_desc(sort_array)
 #  sort_array.sort { | b, a | a <=> b  }
@@ -45,7 +45,7 @@ end
 
 def reverse_array(input_array)
 #  input_array.reverse  ## Using Ruby reverse method
-  i = input_array.length
+  i = input_array.length  ## Hand coded solution
   j = 0
   output_array = []
   while i > 0
