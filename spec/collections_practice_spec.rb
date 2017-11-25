@@ -30,6 +30,13 @@ describe 'collections practice' do
     end
   end
 
+  # Question 4 Advanced option
+  describe '#swap_elements_from_to' do
+    it 'swap two specified elements of an array' do
+      expect(swap_elements_from_to(["blake", "ashley", "scott"],1,2)).to eq(["blake", "scott", "ashley"])
+    end
+  end
+
   # Question 5
   describe '#reverse_array' do
     it 'reverse the order of an array of integers' do
@@ -55,6 +62,11 @@ describe 'collections practice' do
   # Question 8
   describe '#sum_array' do
     #for a bonus, look up the `.inject` method to get this test passing
+    it 'uses inject' do
+      numbers = [1,2,3]
+      expect(numbers).to receive(:inject)
+      sum_array(numbers)
+    end
     it 'sum all the numbers in the following array' do
       expect(sum_array([11,4,7,8,9,100,134])).to eq(273)
     end
